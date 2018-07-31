@@ -14,7 +14,6 @@ const starWarsReducer = (state = initialState, action) => {
 				...state,
 				filmsData: action.filmsData,
 			}
-			// return Object.assign({}, state, {filmUrls: action.films} );
 		case (types.FETCH_STAR_WARS_FAILURE):
 			return {
 				...state,
@@ -28,7 +27,7 @@ const starWarsReducer = (state = initialState, action) => {
 
 const rootReducer = combineReducers({
 	starWarsReducer,
-	error: error
+	error
 })
 
 export default rootReducer

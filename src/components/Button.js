@@ -1,9 +1,6 @@
 import React from 'react';
-import { v4 } from 'node-uuid';
 
 const Button = (props) => {
-
-// deconstruct here
 
   return <button 
   			onClick={props.handleStarWarsRequest(props.character.url, props.character.name)} 

@@ -2,8 +2,7 @@ import {
     takeLatest,
     put,
     call,
-    all,
-    apply
+    all
 } from 'redux-saga/effects'
 
 import {
@@ -30,7 +29,10 @@ function* personSaga(action) {
     try {
         const personResponse = yield fetch(`${action.url}`);
         if (personResponse.status < 200 && personResponse.status > 300) {
-	      throw personResponse;
+    	    yield put({
+                type: FETCH_STAR_WARS_FAILURE,
+                errorMsg: 'There was an error in the Galaxy'
+            });
 	    }
 
         const {

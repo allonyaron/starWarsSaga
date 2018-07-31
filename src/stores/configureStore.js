@@ -11,9 +11,9 @@ const store = createStore(
 	rootReducer,
 	applyMiddleware(sagaMiddleware)
 	);
-console.log('getState', store.getState());
+
 sagaMiddleware.run(fetchStarWarsPersonSaga);
-//store.dispatch({type: "FETCH_STAR_WARS_SUCCESS"})
+
 
 
 export default store;

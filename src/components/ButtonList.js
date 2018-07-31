@@ -5,7 +5,6 @@ import { v4 } from 'node-uuid';
 
 
 const ButtonList = (props) => {
-  console.log(props.characters);
   return (
             <div className="button-container">
               {props.characters.map((character) => {

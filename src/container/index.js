@@ -18,6 +18,3 @@ const bindActionsToDispatch = dispatch => (
 const AppContainer = connect(mapStateToProps, bindActionsToDispatch)(App)
 
 export default AppContainer;
-
-
-// export default connect()(App);
