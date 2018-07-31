@@ -2,11 +2,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Steps to run locally
 
-### `git clone git@github.com:allonyaron/starWarsSaga.git`
+`git clone git@github.com:allonyaron/starWarsSaga.git`
 
-### `npm install`
+`npm install`
 
-### `npm start`
+`npm start`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
