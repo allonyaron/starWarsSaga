@@ -20,11 +20,6 @@ function* fetchUrlSaga(url) {
     return yield response.json();
 }
 
-// pull out film saga
-// do I need more actions?
-// how do I cleanly pull out data from response
-// why yield to the response.json conversion - why do I need a yield there? which function calls would warant a yield
-
 function* personSaga(action) {
     try {
         const personResponse = yield fetch(`${action.url}`);
